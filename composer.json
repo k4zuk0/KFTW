@@ -3,7 +3,8 @@
     "type": "project",
     "description": "My first attempt at making a Hacklang Framework",
     "autoload": {
-        "psr-0": {"": "src/"}
+        "psr-0": {"": "src/"},
+        "psr-4": {"": "src/"}
     },
     "require": {
         "facebook/xhp-lib": "dev-hack"
