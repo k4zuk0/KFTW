@@ -23,4 +23,8 @@ class Router {
     public function addRoute(string $k, string $v) {
         $this->routes[$k] = $v;
     }
+    
+    public function getRoutes() : array<string, string> {
+        return $this->routes;
+    }
 }
