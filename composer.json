@@ -1,0 +1,11 @@
+{
+    "name": "KFTW",
+    "type": "project",
+    "description": "My first attempt at making a Hacklang Framework",
+    "autoload": {
+        "psr-0": {"": "src/"}
+    },
+    "require": {
+        "facebook/xhp-lib": "dev-hack"
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "214844e7662211d10ede10cca52231d5",
+    "packages": [
+        {
+            "name": "facebook/xhp-lib",
+            "version": "dev-hack",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/facebook/xhp-lib.git",
+                "reference": "d98a9bdf28632cf291f4b644ab4d24b495743420"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/facebook/xhp-lib/zipball/d98a9bdf28632cf291f4b644ab4d24b495743420",
+                "reference": "d98a9bdf28632cf291f4b644ab4d24b495743420",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Class library for XHP",
+            "homepage": "https://github.com/facebook/xhp-lib",
+            "keywords": [
+                "facebook",
+                "hack",
+                "hhvm",
+                "xhp"
+            ],
+            "time": "2015-02-18 00:19:12"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "facebook/xhp-lib": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
