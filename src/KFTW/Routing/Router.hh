@@ -20,8 +20,15 @@ class Router {
         }
     }
     
-    public function addRoute(string $k, string $v) {
-        $this->routes[$k] = $v;
+    public function addRoute(string $routeName, array<string> $controllerInfos) {
+        $this->routes[$routeName] = $controllerInfos;
+    }
+    
+    public function getRoute(string $routeName) : ?array<string> {
+        if (array_key_exists($routeName, $this->routes)) {
+            return $this->routes[$routeName];
+        }
+        return null;
     }
     
     public function getRoutes() : array<string, array<string>> {
