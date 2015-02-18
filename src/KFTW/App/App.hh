@@ -23,7 +23,15 @@ abstract class App {
         
         $this->bundles = $this->listBundles();
         foreach ($this->bundles as $bundle) {
-            $this->router->addRoutes($bundle->getRoutes());
+            foreach ($bundle->getRoutes() as $routeName => $controllerInfos) {
+                $bundleExplodedFQCN = explode('\\', get_class($bundleExplodedFQCN));
+                array_pop($bundleExplodedFQCN);
+                $namespace = implode('\\', $bundleExplodedFQCN);
+                $this->router->addRoute($routeName, [
+                    $namespace.'\Controller\\'.$controllerInfos[0].'Controller',
+                    $controllerInfos[1].'Action'
+                ]);
+            }
         }
         
         $this->loaded = true;
