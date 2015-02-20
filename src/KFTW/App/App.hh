@@ -41,6 +41,7 @@ abstract class App {
             if ($controllerInfos) {
                 $controllerClass = '\\'.$controllerInfos[0];
                 $controller = new $controllerClass();
+                
                 $return = $controller->$controllerInfos[1]();
                 
                 echo 'Matching route returned :'."\n";
